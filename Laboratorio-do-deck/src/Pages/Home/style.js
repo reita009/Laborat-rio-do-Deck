@@ -16,8 +16,15 @@ export const TitleArea = styled.div`
   margin-left: auto;
   margin-right: auto;
 
+  @media (max-width: 775px) {
+    width: 100%;
+  }
+
   h1 {
     font-size: 75px;
+    @media (max-width: 1614px) {
+      font-size: 45px;
+    }
   }
 `;
 
@@ -32,6 +39,13 @@ export const Banner = styled.div`
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
+
+    @media (max-width: 776px) {
+      height: 300px;
+    }
+    @media (max-width: 594px) {
+      height: 200px;
+    }
   }
 `;
 
@@ -45,6 +59,11 @@ export const ResumeContainer = styled.div`
   .container {
     display: flex;
 
+    @media (max-width: 1664px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     div {
       width: 50%;
     }
@@ -53,6 +72,11 @@ export const ResumeContainer = styled.div`
       display: flex;
       flex-direction: column;
       padding: 12px;
+
+      @media (max-width: 1664px) {
+        margin-bottom: 40px;
+        width: 100%;
+      }
 
       h1 {
         font-size: 45px;
@@ -72,9 +96,18 @@ export const ResumeContainer = styled.div`
       flex-direction: column;
       padding: 12px;
 
+      @media (max-width: 1664px) {
+        margin-bottom: 40px;
+        width: 100%;
+      }
+
       img {
         margin: auto;
         height: 500px;
+
+        @media (max-width: 1664px) {
+          height: 230px;
+        }
       }
     }
   }
@@ -89,6 +122,11 @@ export const EmulationContainer = styled.div`
   .container {
     display: flex;
     padding-bottom: 20px;
+
+    @media (max-width: 1664px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .left {
@@ -96,6 +134,11 @@ export const EmulationContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 12px;
+
+    @media (max-width: 1664px) {
+      margin-bottom: 40px;
+      width: 100%;
+    }
 
     img {
       margin-top: auto;
@@ -108,6 +151,10 @@ export const EmulationContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 12px;
+
+    @media (max-width: 1664px) {
+      width: 100%;
+    }
 
     h1 {
       font-size: 45px;
