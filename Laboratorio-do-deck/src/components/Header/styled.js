@@ -40,6 +40,13 @@ export const Container = styled.div`
     width: 700px;
     display: flex;
 
+    a {
+      text-decoration: none;
+      color: white;
+      width: 100px;
+      text-align: center;
+    }
+
     @media (max-width: 1669px) {
       width: 500px;
       margin-left: 50px;

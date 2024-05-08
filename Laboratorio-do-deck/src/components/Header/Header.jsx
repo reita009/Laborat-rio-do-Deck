@@ -2,6 +2,7 @@ import * as C from "./styled";
 import Logo from "../../assets/LogoLab.png";
 import LogoDeck from "../../assets/steamDeckLogo.png";
 import * as Btn from "../Buttons/style";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -13,19 +14,19 @@ export const Header = () => {
         <div className="btn-group">
           <Btn.GreenHeader>
             <button className="button-86" role="button">
-              Home
+              <Link to="/">Home</Link>
             </button>
           </Btn.GreenHeader>
 
           <Btn.GreenHeader>
             <button className="button-86" role="button">
-              Contato
+              <Link to="/contact">Contato</Link>
             </button>
           </Btn.GreenHeader>
 
           <Btn.GreenHeader>
             <button className="button-86" role="button">
-              Sobre
+              <Link to="/about">Sobre</Link>
             </button>
           </Btn.GreenHeader>
         </div>

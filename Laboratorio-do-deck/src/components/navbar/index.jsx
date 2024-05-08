@@ -16,6 +16,8 @@ export const Navbar = () => {
         setPluguins(false);
         setEmudeck(false);
         setPortProton(false);
+        control = "novidades";
+
         break;
       case "HydraLauncher":
         setNovidades(false);
@@ -23,6 +25,7 @@ export const Navbar = () => {
         setPluguins(false);
         setEmudeck(false);
         setPortProton(false);
+        control = "HydraLauncher";
         break;
       case "pluguins":
         setNovidades(false);
@@ -52,10 +55,10 @@ export const Navbar = () => {
       <C.ContanierNavbar>
         <nav className="nav nav-pills flex-column flex-sm-row">
           <C.Link
-            active={novidades}
             onClick={() => {
               changeActive("novidades");
             }}
+            active={novidades}
             className="flex-sm-fill text-sm-center nav-link"
           >
             Novidades
@@ -63,10 +66,10 @@ export const Navbar = () => {
 
           <C.Link
             active={hydraLauncher}
+            className="flex-sm-fill text-sm-center nav-link"
             onClick={() => {
               changeActive("HydraLauncher");
             }}
-            className="flex-sm-fill text-sm-center nav-link"
           >
             Hydra Launcher
           </C.Link>

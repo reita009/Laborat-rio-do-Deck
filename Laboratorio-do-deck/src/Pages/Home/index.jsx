@@ -9,8 +9,6 @@ import * as C from "./style";
 export const Home = () => {
   return (
     <>
-      <Header />
-      <Navbar />
       <C.ContainerHome>
         <div className="container">
           <C.TitleArea>
@@ -79,7 +77,6 @@ export const Home = () => {
           </div>
         </div>
       </C.EmulationContainer>
-      <Footer />
     </>
   );
 };

@@ -1,12 +1,14 @@
 import "./App.css";
-import { Home } from "../src/Pages/Home";
 import { Route, Routes } from "react-router-dom";
+
+//PATH
+import { Main } from "./Pages/Main";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Main />} />
       </Routes>
     </>
   );
